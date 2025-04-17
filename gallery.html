@@ -3,107 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viriyur Village - Gallery</title>
+    <title>Gallery - Viriyur Village</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header-component></header-component>
 
     <main>
       <section class="gallery-hero">
-        <div class="hero-content">
+        <div class="hero-content animate-fade-up">
           <h1 data-i18n="gallery.title">Photo Gallery</h1>
-          <p data-i18n="gallery.subtitle">
-            Explore the beauty of Viriyur through our photos
+          <p class="hero-subtitle" data-i18n="gallery.subtitle">
+            Capturing the essence of our vibrant village life
           </p>
         </div>
       </section>
 
-      <section class="gallery-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="landscape">Landscape</button>
-        <button class="filter-btn" data-filter="culture">Culture</button>
-        <button class="filter-btn" data-filter="events">Events</button>
+      <section class="gallery-filters animate-fade-up">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-border-all"></i> All
+        </button>
+        <button class="filter-btn" data-filter="landscape">
+          <i class="fas fa-mountain"></i> Landscape
+        </button>
+        <button class="filter-btn" data-filter="culture">
+          <i class="fas fa-theater-masks"></i> Culture
+        </button>
+        <button class="filter-btn" data-filter="events">
+          <i class="fas fa-calendar-alt"></i> Events
+        </button>
       </section>
 
       <section class="gallery-grid">
-        <div class="gallery-item" data-category="landscape">
+        <div class="gallery-item animate-fade-up" data-category="landscape">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?village,landscape"
             alt="Village Fields"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.landscape1">Village Fields</h3>
             <p data-i18n="gallery.landscape1_desc">
-              Lush green fields of Viriyur
+              The lush green paddy fields that surround our village, showcasing the agricultural heritage
             </p>
           </div>
         </div>
-        <div class="gallery-item" data-category="culture">
+
+        <div class="gallery-item animate-fade-up" data-category="culture">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?indian,dance"
             alt="Traditional Dance"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.culture1">Traditional Dance</h3>
-            <p data-i18n="gallery.culture1_desc">Bharatanatyam performance</p>
+            <p data-i18n="gallery.culture1_desc">
+              A mesmerizing Bharatanatyam performance during our cultural festival
+            </p>
           </div>
         </div>
-        <div class="gallery-item" data-category="events">
+
+        <div class="gallery-item animate-fade-up" data-category="events">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?festival,indian"
             alt="Pongal Festival"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.event1">Pongal Festival</h3>
-            <p data-i18n="gallery.event1_desc">Harvest festival celebration</p>
+            <p data-i18n="gallery.event1_desc">
+              Celebrating the harvest festival with traditional customs and joy
+            </p>
           </div>
         </div>
-        <div class="gallery-item" data-category="landscape">
+
+        <div class="gallery-item animate-fade-up" data-category="landscape">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?temple,architecture"
             alt="Village Temple"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.landscape2">Village Temple</h3>
             <p data-i18n="gallery.landscape2_desc">
-              Ancient Dravidian architecture
+              Our ancient temple showcasing magnificent Dravidian architecture
             </p>
           </div>
         </div>
-        <div class="gallery-item" data-category="culture">
+
+        <div class="gallery-item animate-fade-up" data-category="culture">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?craft,artisan"
             alt="Traditional Crafts"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.culture2">Traditional Crafts</h3>
-            <p data-i18n="gallery.culture2_desc">Local artisans at work</p>
+            <p data-i18n="gallery.culture2_desc">
+              Local artisans preserving age-old craftsmanship through their work
+            </p>
           </div>
         </div>
-        <div class="gallery-item" data-category="events">
+
+        <div class="gallery-item animate-fade-up" data-category="events">
           <img
-            src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg"
+            src="https://source.unsplash.com/800x800/?temple,festival"
             alt="Temple Festival"
+            loading="lazy"
           />
           <div class="gallery-overlay">
             <h3 data-i18n="gallery.event2">Temple Festival</h3>
-            <p data-i18n="gallery.event2_desc">Annual temple celebration</p>
+            <p data-i18n="gallery.event2_desc">
+              Annual temple festival bringing the community together in celebration
+            </p>
           </div>
         </div>
       </section>
 
       <div class="lightbox">
         <div class="lightbox-content">
-          <span class="close-btn">&times;</span>
+          <button class="close-btn" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+          </button>
           <img src="" alt="" class="lightbox-img" />
           <div class="lightbox-caption">
             <h3></h3>
@@ -113,37 +137,32 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="modern-footer">
       <div class="footer-content">
-        <div class="footer-section">
-          <h3 data-i18n="footer.about">About Viriyur</h3>
-          <p data-i18n="footer.about_desc">
-            A beautiful village preserving its rich culture and traditions in
-            Tamil Nadu, India.
-          </p>
+        <div class="footer-section animate-fade-up">
+          <h3>About Viriyur</h3>
+          <p>A beautiful village preserving its rich culture and traditions in Tamil Nadu, India.</p>
         </div>
-        <div class="footer-section">
-          <h3 data-i18n="footer.quick_links">Quick Links</h3>
+        <div class="footer-section animate-fade-up">
+          <h3>Quick Links</h3>
           <ul>
-            <li><a href="about.html" data-i18n="nav.about">About</a></li>
-            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
-            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
-            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h3 data-i18n="footer.connect">Connect With Us</h3>
+        <div class="footer-section animate-fade-up">
+          <h3>Connect With Us</h3>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">
-          &copy; 2024 Viriyur Village. All rights reserved.
-        </p>
+        <p>&copy; 2024 Viriyur Village. All rights reserved.</p>
       </div>
     </footer>
 
