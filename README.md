@@ -67,10 +67,6 @@ viriyur-web/
 
 We welcome contributions from the local community and developers who want to help. Feel free to open issues or submit pull requests.
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
 ---
 
 Let’s build a meaningful digital home for **Viriyur** 🌱
