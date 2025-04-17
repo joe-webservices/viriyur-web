@@ -3,42 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events - Viriyur Village</title>
+    <title>Viriyur Village - Events</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <h1>Viriyur</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html" class="active">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="language-toggle">
-          <button class="lang-btn">தமிழ்</button>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
+    <header-component></header-component>
 
     <main>
       <section class="events-hero">
-        <div class="events-hero-content">
-          <h1>Upcoming Events</h1>
-          <p>Stay updated with our village celebrations and activities</p>
+        <div class="hero-content">
+          <h1 data-i18n="events.title">Upcoming Events</h1>
+          <p data-i18n="events.subtitle">
+            Stay updated with our village activities
+          </p>
         </div>
       </section>
 
@@ -200,7 +185,9 @@
       </div>
     </footer>
 
+    <script src="assets/js/components/header.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
     <script src="assets/js/events.js"></script>
   </body>
 </html>

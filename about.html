@@ -3,42 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Viriyur - Viriyur Village</title>
+    <title>Viriyur Village - About</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <h1>Viriyur</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="language-toggle">
-          <button class="lang-btn">தமிழ்</button>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
+    <header-component></header-component>
 
     <main>
       <section class="about-hero">
-        <div class="about-hero-content">
-          <h1>About Viriyur</h1>
-          <p>Discover the rich heritage and culture of our village</p>
+        <div class="hero-content">
+          <h1 data-i18n="about.title">About Viriyur</h1>
+          <p data-i18n="about.subtitle">
+            Discover our rich heritage and culture
+          </p>
         </div>
       </section>
 
@@ -151,6 +136,8 @@
       </div>
     </footer>
 
+    <script src="assets/js/components/header.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
   </body>
 </html>

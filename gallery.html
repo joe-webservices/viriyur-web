@@ -15,32 +15,7 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <h1>Viriyur</h1>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a href="about.html" data-i18n="nav.about">About</a></li>
-          <li>
-            <a href="gallery.html" class="active" data-i18n="nav.gallery"
-              >Gallery</a
-            >
-          </li>
-          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
-          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="language-toggle">
-          <button id="langBtn" class="lang-btn">தமிழ்</button>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-    </header>
+    <header-component></header-component>
 
     <main>
       <section class="gallery-hero">
@@ -172,6 +147,7 @@
       </div>
     </footer>
 
+    <script src="assets/js/components/header.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/language.js"></script>
     <script src="assets/js/gallery.js"></script>
