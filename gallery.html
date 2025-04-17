@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Viriyur Village</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>Viriyur</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="language-toggle">
+          <button class="lang-btn">தமிழ்</button>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-hero">
+        <div class="gallery-hero-content">
+          <h1>Photo Gallery</h1>
+          <p>
+            Explore the beauty of Viriyur through our collection of photographs
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-filters">
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="landmarks">Landmarks</button>
+          <button class="filter-btn" data-filter="festivals">Festivals</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="people">People</button>
+        </div>
+      </section>
+
+      <section class="gallery-grid">
+        <div class="gallery-item" data-category="landmarks">
+          <img src="assets/images/gallery/landmark1.jpg" alt="Ancient Temple" />
+          <div class="gallery-overlay">
+            <h3>Ancient Temple</h3>
+            <p>A historical temple in Viriyur</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="festivals">
+          <img
+            src="assets/images/gallery/festival1.jpg"
+            alt="Pongal Celebration"
+          />
+          <div class="gallery-overlay">
+            <h3>Pongal Celebration</h3>
+            <p>Traditional harvest festival</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="assets/images/gallery/nature1.jpg" alt="Village Lake" />
+          <div class="gallery-overlay">
+            <h3>Village Lake</h3>
+            <p>Serene water body</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="people">
+          <img src="assets/images/gallery/people1.jpg" alt="Village Elder" />
+          <div class="gallery-overlay">
+            <h3>Village Elder</h3>
+            <p>Sharing stories of the past</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="landmarks">
+          <img
+            src="assets/images/gallery/landmark2.jpg"
+            alt="Community Center"
+          />
+          <div class="gallery-overlay">
+            <h3>Community Center</h3>
+            <p>Heart of village activities</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="festivals">
+          <img
+            src="assets/images/gallery/festival2.jpg"
+            alt="Temple Festival"
+          />
+          <div class="gallery-overlay">
+            <h3>Temple Festival</h3>
+            <p>Annual religious celebration</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="assets/images/gallery/nature2.jpg" alt="Sunset" />
+          <div class="gallery-overlay">
+            <h3>Sunset</h3>
+            <p>Beautiful evening sky</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="people">
+          <img src="assets/images/gallery/people2.jpg" alt="Children Playing" />
+          <div class="gallery-overlay">
+            <h3>Children Playing</h3>
+            <p>Joy of village life</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="lightbox">
+        <div class="lightbox-content">
+          <span class="close-btn">&times;</span>
+          <img src="" alt="" class="lightbox-img" />
+          <div class="lightbox-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Viriyur</h3>
+          <p>
+            A beautiful village preserving its rich culture and traditions in
+            Tamil Nadu, India.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Viriyur Village. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/gallery.js"></script>
+  </body>
+</html>
