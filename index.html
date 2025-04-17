@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -17,14 +21,16 @@
           <h1>Viriyur</h1>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+          </li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="language-toggle">
-          <button class="lang-btn">தமிழ்</button>
+          <button id="langBtn" class="lang-btn">தமிழ்</button>
         </div>
         <div class="hamburger">
           <span></span>
@@ -37,31 +43,39 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Welcome to Viriyur</h1>
-          <p>A beautiful village in Tamil Nadu, India</p>
+          <h1 data-i18n="home.welcome">Welcome to Viriyur</h1>
+          <p data-i18n="home.subtitle">
+            A beautiful village in Tamil Nadu, India
+          </p>
         </div>
       </section>
 
       <section class="features">
         <div class="feature-card">
           <i class="fas fa-landmark"></i>
-          <h3>Rich History</h3>
-          <p>Discover the ancient heritage and traditions of our village</p>
+          <h3 data-i18n="home.history">Rich History</h3>
+          <p data-i18n="home.history_desc">
+            Discover the ancient heritage and traditions of our village
+          </p>
         </div>
         <div class="feature-card">
           <i class="fas fa-camera"></i>
-          <h3>Photo Gallery</h3>
-          <p>Explore beautiful moments captured in our village</p>
+          <h3 data-i18n="home.gallery">Photo Gallery</h3>
+          <p data-i18n="home.gallery_desc">
+            Explore beautiful moments captured in our village
+          </p>
         </div>
         <div class="feature-card">
           <i class="fas fa-calendar-alt"></i>
-          <h3>Events</h3>
-          <p>Stay updated with upcoming festivals and celebrations</p>
+          <h3 data-i18n="home.events">Events</h3>
+          <p data-i18n="home.events_desc">
+            Stay updated with upcoming festivals and celebrations
+          </p>
         </div>
       </section>
 
       <section class="map-section">
-        <h2>Find Us</h2>
+        <h2 data-i18n="home.find_us">Find Us</h2>
         <div class="map-container">
           <!-- Google Maps embed will go here -->
           <div class="map-placeholder">
@@ -79,11 +93,11 @@
       </section>
 
       <section class="instagram-feed">
-        <h2>Follow Us on Instagram</h2>
+        <h2 data-i18n="home.instagram">Follow Us on Instagram</h2>
         <div class="instagram-container">
           <!-- Instagram feed will be integrated here -->
           <div class="instagram-placeholder">
-            <p>Instagram feed loading...</p>
+            <p data-i18n="home.instagram_loading">Instagram feed loading...</p>
           </div>
         </div>
       </section>
@@ -92,23 +106,23 @@
     <footer>
       <div class="footer-content">
         <div class="footer-section">
-          <h3>About Viriyur</h3>
-          <p>
+          <h3 data-i18n="footer.about">About Viriyur</h3>
+          <p data-i18n="footer.about_desc">
             A beautiful village preserving its rich culture and traditions in
             Tamil Nadu, India.
           </p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footer.quick_links">Quick Links</h3>
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Events</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-section">
-          <h3>Connect With Us</h3>
+          <h3 data-i18n="footer.connect">Connect With Us</h3>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -117,10 +131,13 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Viriyur Village. All rights reserved.</p>
+        <p data-i18n="footer.copyright">
+          &copy; 2024 Viriyur Village. All rights reserved.
+        </p>
       </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
   </body>
 </html>

@@ -1062,3 +1062,110 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+/* Tamil Language Support */
+html[lang="ta"] {
+  font-family: "Noto Sans Tamil", "Latha", "Vijaya", sans-serif;
+}
+
+html[lang="ta"] .hero-content h1,
+html[lang="ta"] .hero-content p,
+html[lang="ta"] h2,
+html[lang="ta"] h3,
+html[lang="ta"] p {
+  font-family: "Noto Sans Tamil", "Latha", "Vijaya", sans-serif;
+}
+
+/* Language Toggle Button */
+.language-toggle {
+  margin-left: 1rem;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Noto Sans Tamil", "Latha", "Vijaya", sans-serif;
+}
+
+.lang-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Ensure proper text alignment */
+html[lang="ta"] .hero-content,
+html[lang="ta"] .feature-card,
+html[lang="ta"] .footer-section,
+html[lang="ta"] .about-content,
+html[lang="ta"] .gallery-content,
+html[lang="ta"] .events-content,
+html[lang="ta"] .contact-content {
+  text-align: left;
+}
+
+/* Add smooth transition for language switch */
+[data-i18n] {
+  transition: opacity 0.3s ease;
+  display: block;
+  visibility: visible;
+}
+
+html[lang="ta"] [data-i18n] {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  display: block;
+  visibility: visible;
+}
+
+/* Ensure text is visible and properly aligned */
+html[lang="ta"] .nav-links a,
+html[lang="ta"] .footer-section a,
+html[lang="ta"] .feature-card,
+html[lang="ta"] .about-section,
+html[lang="ta"] .gallery-item,
+html[lang="ta"] .event-card,
+html[lang="ta"] .contact-info {
+  text-align: left;
+}
+
+/* Fix form elements */
+html[lang="ta"] input,
+html[lang="ta"] textarea,
+html[lang="ta"] button {
+  text-align: left;
+  font-family: "Noto Sans Tamil", "Latha", "Vijaya", sans-serif;
+}
+
+/* Ensure proper spacing for text */
+html[lang="ta"] p,
+html[lang="ta"] li,
+html[lang="ta"] span {
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: 1.6;
+}
+
+/* Fix calendar */
+html[lang="ta"] .calendar-weekdays,
+html[lang="ta"] .calendar-days {
+  text-align: center;
+}
+
+html[lang="ta"] .calendar-day {
+  text-align: center;
+}
+
+/* Fix contact form */
+html[lang="ta"] .form-group label {
+  text-align: left;
+}
+
+html[lang="ta"] .form-group input,
+html[lang="ta"] .form-group textarea {
+  text-align: left;
+}
