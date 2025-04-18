@@ -3,131 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viriyur Village - Contact</title>
+    <title>Contact Us - Viriyur Village</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header-component></header-component>
 
     <main>
       <section class="contact-hero">
-        <div class="hero-content">
+        <div class="hero-content animate-fade-up">
           <h1 data-i18n="contact.title">Contact Us</h1>
-          <p data-i18n="contact.subtitle">Get in touch with our community</p>
+          <p class="hero-subtitle" data-i18n="contact.subtitle">We'd love to hear from you</p>
         </div>
       </section>
 
-      <section class="contact-info">
+      <section class="contact-section">
         <div class="contact-container">
-          <div class="contact-details">
-            <h2>Village Information</h2>
+          <div class="contact-details animate-fade-up">
+            <h2>Get in Touch</h2>
             <div class="info-card">
               <i class="fas fa-map-marker-alt"></i>
               <div>
-                <h3>Address</h3>
-                <p>Viriyur Village<br />Tamil Nadu, India</p>
+                <h3>Visit Us</h3>
+                <p>Viriyur Village<br />Tamil Nadu 606402<br />India</p>
               </div>
             </div>
             <div class="info-card">
-              <i class="fas fa-phone"></i>
+              <i class="fas fa-phone-alt"></i>
               <div>
-                <h3>Phone</h3>
-                <p>+91 1234567890</p>
+                <h3>Call Us</h3>
+                <p>+91 1234567890<br />+91 9876543210</p>
               </div>
             </div>
             <div class="info-card">
               <i class="fas fa-envelope"></i>
               <div>
-                <h3>Email</h3>
-                <p>info@viriyurvillage.com</p>
+                <h3>Email Us</h3>
+                <p>info@viriyurvillage.com<br />support@viriyurvillage.com</p>
               </div>
             </div>
             <div class="info-card">
               <i class="fas fa-clock"></i>
               <div>
                 <h3>Office Hours</h3>
-                <p>
-                  Monday - Friday: 9:00 AM - 5:00 PM<br />Saturday: 9:00 AM -
-                  1:00 PM
-                </p>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br />Saturday: 9:00 AM - 1:00 PM</p>
               </div>
             </div>
           </div>
 
-          <div class="contact-form">
-            <h2>Send Us a Message</h2>
+          <div class="contact-form animate-fade-up">
+            <h2>Send a Message</h2>
             <form id="contact-form">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" required />
+                <label for="name">Your Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Enter your name"
+                  required 
+                />
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required />
+                <label for="email">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="Enter your email"
+                  required 
+                />
               </div>
               <div class="form-group">
                 <label for="subject">Subject</label>
-                <input type="text" id="subject" required />
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  placeholder="What is this regarding?"
+                  required 
+                />
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" required></textarea>
+                <label for="message">Your Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
               </div>
-              <button type="submit" class="submit-btn">Send Message</button>
+              <button type="submit" class="button">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
             </form>
           </div>
         </div>
       </section>
 
       <section class="map-section">
-        <h2>Find Us</h2>
-        <div class="map-container">
-          <!-- Google Maps embed will go here -->
-          <div class="map-placeholder">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14275.400386354215!2d78.96479124999999!3d11.878396050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac9e483a4213ad%3A0xdbe617bbf9978b96!2sViriyur%2C%20Tamil%20Nadu%20606402!5e1!3m2!1sen!2sin!4v1744880283620!5m2!1sen!2sin"
-              width="700"
-              height="400"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+        <div class="section-header">
+          <h2 class="animate-fade-up">Find Us</h2>
+          <p class="animate-fade-up">Visit our beautiful village in Tamil Nadu</p>
+        </div>
+        <div class="map-container animate-fade-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14275.400386354215!2d78.96479124999999!3d11.878396050000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac9e483a4213ad%3A0xdbe617bbf9978b96!2sViriyur%2C%20Tamil%20Nadu%20606402!5e1!3m2!1sen!2sin!4v1744880283620!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
 
       <section class="social-links-section">
         <div class="social-container">
-          <h2>Connect With Us</h2>
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <h2 class="animate-fade-up">Connect With Us</h2>
+          <p class="animate-fade-up">Follow us on social media to stay updated</p>
+          <div class="social-icons animate-fade-up">
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="modern-footer">
       <div class="footer-content">
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>About Viriyur</h3>
-          <p>
-            A beautiful village preserving its rich culture and traditions in
-            Tamil Nadu, India.
-          </p>
+          <p>A beautiful village preserving its rich culture and traditions in Tamil Nadu, India.</p>
         </div>
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="about.html">About</a></li>
@@ -136,12 +157,12 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>Connect With Us</h3>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>

@@ -3,36 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viriyur Village - Events</title>
+    <title>Events - Viriyur Village</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header-component></header-component>
 
     <main>
       <section class="events-hero">
-        <div class="hero-content">
-          <h1 data-i18n="events.title">Upcoming Events</h1>
-          <p data-i18n="events.subtitle">
-            Stay updated with our village activities
+        <div class="hero-content animate-fade-up">
+          <h1 data-i18n="events.title">Village Events</h1>
+          <p class="hero-subtitle" data-i18n="events.subtitle">
+            Join us in celebrating our culture and traditions
           </p>
         </div>
       </section>
 
-      <section class="events-calendar">
+      <section class="events-calendar animate-fade-up">
         <div class="calendar-container">
           <div class="calendar-header">
-            <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+            <button id="prev-month" aria-label="Previous month">
+              <i class="fas fa-chevron-left"></i>
+            </button>
             <h2 id="current-month">April 2024</h2>
-            <button id="next-month">
+            <button id="next-month" aria-label="Next month">
               <i class="fas fa-chevron-right"></i>
             </button>
           </div>
@@ -55,9 +52,9 @@
 
       <section class="events-list">
         <div class="events-container">
-          <h2>Featured Events</h2>
+          <h2 class="section-header animate-fade-up">Featured Events</h2>
           <div class="event-cards">
-            <div class="event-card">
+            <div class="event-card animate-fade-up">
               <div class="event-date">
                 <span class="event-day">15</span>
                 <span class="event-month">Apr</span>
@@ -71,14 +68,16 @@
                   <i class="fas fa-map-marker-alt"></i> Main Temple
                 </p>
                 <p class="event-description">
-                  Annual temple festival with traditional rituals and cultural
-                  programs.
+                  Annual temple festival with traditional rituals and cultural programs. Join us for a day of spiritual enlightenment and cultural celebration.
                 </p>
-                <button class="event-rsvp">RSVP</button>
+                <button class="event-rsvp">
+                  <span>RSVP Now</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
               </div>
             </div>
 
-            <div class="event-card">
+            <div class="event-card animate-fade-up">
               <div class="event-date">
                 <span class="event-day">20</span>
                 <span class="event-month">Apr</span>
@@ -92,14 +91,16 @@
                   <i class="fas fa-map-marker-alt"></i> Community Hall
                 </p>
                 <p class="event-description">
-                  Monthly village meeting to discuss community development and
-                  upcoming projects.
+                  Monthly village meeting to discuss community development and upcoming projects. Your voice matters in shaping our village's future.
                 </p>
-                <button class="event-rsvp">RSVP</button>
+                <button class="event-rsvp">
+                  <span>RSVP Now</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
               </div>
             </div>
 
-            <div class="event-card">
+            <div class="event-card animate-fade-up">
               <div class="event-date">
                 <span class="event-day">25</span>
                 <span class="event-month">Apr</span>
@@ -113,10 +114,12 @@
                   <i class="fas fa-map-marker-alt"></i> Village Ground
                 </p>
                 <p class="event-description">
-                  An evening of traditional music, dance, and cultural
-                  performances.
+                  An enchanting evening of traditional music, dance, and cultural performances. Experience the rich heritage of our village.
                 </p>
-                <button class="event-rsvp">RSVP</button>
+                <button class="event-rsvp">
+                  <span>RSVP Now</span>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -124,45 +127,68 @@
       </section>
 
       <section class="event-form">
-        <div class="form-container">
-          <h2>Add Your Event</h2>
+        <div class="form-container animate-fade-up">
+          <h2>Submit Your Event</h2>
+          <p class="form-subtitle">Have an event to share with the community? Let us know!</p>
           <form id="event-submission-form">
             <div class="form-group">
               <label for="event-name">Event Name</label>
-              <input type="text" id="event-name" required />
+              <input 
+                type="text" 
+                id="event-name" 
+                placeholder="Enter event name"
+                required 
+              />
             </div>
             <div class="form-group">
               <label for="event-date">Date</label>
-              <input type="date" id="event-date" required />
+              <input 
+                type="date" 
+                id="event-date" 
+                required 
+              />
             </div>
             <div class="form-group">
               <label for="event-time">Time</label>
-              <input type="time" id="event-time" required />
+              <input 
+                type="time" 
+                id="event-time" 
+                required 
+              />
             </div>
             <div class="form-group">
               <label for="event-location">Location</label>
-              <input type="text" id="event-location" required />
+              <input 
+                type="text" 
+                id="event-location" 
+                placeholder="Enter event location"
+                required 
+              />
             </div>
             <div class="form-group">
               <label for="event-description">Description</label>
-              <textarea id="event-description" required></textarea>
+              <textarea 
+                id="event-description" 
+                placeholder="Tell us about your event..."
+                required
+              ></textarea>
             </div>
-            <button type="submit" class="submit-btn">Submit Event</button>
+            <button type="submit" class="button">
+              <span>Submit Event</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="modern-footer">
       <div class="footer-content">
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>About Viriyur</h3>
-          <p>
-            A beautiful village preserving its rich culture and traditions in
-            Tamil Nadu, India.
-          </p>
+          <p>A beautiful village preserving its rich culture and traditions in Tamil Nadu, India.</p>
         </div>
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>Quick Links</h3>
           <ul>
             <li><a href="about.html">About</a></li>
@@ -171,12 +197,12 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-section">
+        <div class="footer-section animate-fade-up">
           <h3>Connect With Us</h3>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
